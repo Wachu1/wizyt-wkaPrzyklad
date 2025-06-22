@@ -454,7 +454,7 @@ footer .nav-links {
     font-size: 1.1rem;
 }
 
-/* === MEDIA QUERIES (Responsywność) === */
+
 
 /* Ekrany do 1200px (Tablety w poziomie) */
 @media screen and (max-width: 1200px) {
@@ -532,6 +532,13 @@ footer .nav-links {
     .logo {
         font-size: 1.5rem;
     }
+    
+
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .section_pic-container {
         width: 200px;
         height: 200px;
@@ -543,5 +550,19 @@ footer .nav-links {
     .article-container article {
         width: 100%;
         justify-content: flex-start;
+    }
+
+
+    #contact {
+        height: auto; 
+        min-height: 50vh; 
+        justify-content: center;
+       
+    }
+
+    
+    .contact-info-upper-container {
+        padding: 1.5rem 1rem; 
+        width: 100%; 
     }
 }
