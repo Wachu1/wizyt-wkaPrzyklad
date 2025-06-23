@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Eclipse Studio</title>
+    <!-- Upewnij się, że ścieżka do CSS jest poprawna -->
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <!-- Zaktualizowana ścieżka do strony głównej -->
+        <a href="../../index.html" class="logo-link"><div class="logo">Eclipse Studio</div></a>
+        <div>
+            <ul class="nav-links">
+                <!-- Zaktualizowane ścieżki -->
+                <li><a href="../../index.html#about">O nas</a></li>
+                <li><a href="../../index.html#experience">Usługi</a></li>
+                <li><a href="#gallery" style="color: grey; text-decoration: underline; text-underline-offset: 0.5rem;">Portfolio</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+                <li class="dark-mode-toggle-container">
+                    <p>Jasny</p>
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggleDesktop">
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Ciemny</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <!-- Zaktualizowana ścieżka do strony głównej -->
+        <a href="../../index.html" class="logo-link"><div class="logo">Eclipse Studio</div></a>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <!-- Zaktualizowane ścieżki -->
+                    <li><a href="../../index.html#about" onclick="toggleMenu()">O nas</a></li>
+                    <li><a href="../../index.html#experience" onclick="toggleMenu()">Usługi</a></li>
+                    <li><a href="#gall ery" onclick="toggleMenu()" style="color: grey;">Portfolio</a></li>
+                    <li><a href="../../index.html#contact" onclick="toggleMenu()">Kontakt</a></li>
+                    <li class="dark-mode-toggle-container-mobile">
+                         <p>Jasny</p>
+                         <label class="switch">
+                            <input type="checkbox" id="darkModeToggleMobile">
+                            <span class="slider round"></span>
+                        </label>
+                        <p>Ciemny</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="gallery">
+        <p class="section_text_p1">Zobacz nasze realizacje</p>
+        <h1 class="title">Galeria</h1>
+
+        <div class="filter-buttons">
+            <button class="btn btn-color-2 filter-btn active" data-filter="all">Wszystkie</button>
+            <button class="btn btn-color-2 filter-btn" data-filter="produktowe">Produktowe</button>
+            <button class="btn btn-color-2 filter-btn" data-filter="portretowe">Portretowe</button>
+            <button class="btn btn-color-2 filter-btn" data-filter="eventowe">Eventowe</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Zdjęcia produktowe -->
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW1938.jpg" alt="Zdjęcie produktowe 1">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW1950.jpg" alt="Zdjęcie produktowe 2">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW1982.jpg" alt="Zdjęcie produktowe 3">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW2007.jpg" alt="Zdjęcie produktowe 4">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW2036.jpg" alt="Zdjęcie produktowe 5">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW2078.jpg" alt="Zdjęcie produktowe 6">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW2147.jpg" alt="Zdjęcie produktowe 7">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW2161.jpg" alt="Zdjęcie produktowe 8">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW2166.jpg" alt="Zdjęcie produktowe 9">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW2075.jpg" alt="Zdjęcie produktowe 10">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW2195.jpg" alt="Zdjęcie produktowe 11">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW2198.jpg" alt="Zdjęcie produktowe 12">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW6002.jpg" alt="Zdjęcie produktowe 13">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW6082.jpg" alt="Zdjęcie produktowe 14">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW6109.jpg" alt="Zdjęcie produktowe 15">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW6126.jpg" alt="Zdjęcie produktowe 16">
+            </div>
+            <div class="gallery-item" data-category="produktowe">
+                <img src="../img/produktowe/PZAW6130.jpg" alt="Zdjęcie produktowe 17">
+            </div>
+
+            <!-- Zdjęcia portretowe (przykładowe) -->
+            <div class="gallery-item" data-category="portretowe">
+                <img src="https://placehold.co/600x800/d3d3d3/000?text=Portret+1" alt="Zdjęcie portretowe 1">
+            </div>
+            <div class="gallery-item" data-category="portretowe">
+                <img src="https://placehold.co/600x800/d3d3d3/000?text=Portret+2" alt="Zdjęcie portretowe 2">
+            </div>
+
+            <!-- Zdjęcia eventowe (przykładowe) -->
+            <div class="gallery-item" data-category="eventowe">
+                <img src="https://placehold.co/800x600/A9A9A9/FFF?text=Event+1" alt="Zdjęcie z wydarzenia 1">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                 <ul class="nav-links">
+                    <li><a href="../../index.html#about">O nas</a></li>
+                    <li><a href="../../index.html#experience">Usługi</a></li>
+                    <li><a href="#gallery">Portfolio</a></li>
+                    <li><a href="../../index.html#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &copy; 2025 Eclipse Studio. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- ======== MODAL / LIGHTBOX DO WYŚWIETLANIA ZDJĘĆ ======== -->
+    <!-- Przeniesiono tutaj dla lepszej praktyki i uniknięcia problemów z z-index -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="caption"></div>
+    </div>
+    <!-- ======================================================== -->
+
+    <!-- Główne skrypty strony (menu, tryb ciemny) -->
+    <!-- Upewnij się, że ścieżka jest poprawna -->
+    <script src="../script/app.js"></script>
+    
+    <!-- Skrypt do galerii i lightboxa -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- LOGIKA FILTROWANIA ---
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const filter = button.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // --- LOGIKA LIGHTBOXA (POWIĘKSZANIE ZDJĘĆ) ---
+            const modal = document.getElementById('lightbox-modal');
+            const modalImg = document.getElementById('lightbox-image');
+            const closeBtn = document.querySelector('.lightbox-close');
+
+            // Funkcja otwierająca modal
+            function openModal(e) {
+                modal.style.display = "block"; // Zmieniono z 'flex' na 'block', aby pasowało do nowych stylów CSS
+                modalImg.src = e.currentTarget.querySelector('img').src;
+            }
+
+            // Funkcja zamykająca modal
+            function closeModal() {
+                modal.style.display = "none";
+            }
+            
+            // Dodaj event listener do każdego zdjęcia w galerii
+            galleryItems.forEach(item => {
+                item.addEventListener('click', openModal);
+            });
+
+            // Zamknij modal po kliknięciu na 'X'
+            closeBtn.addEventListener('click', closeModal);
+
+            // Zamknij modal po kliknięciu poza zdjęciem (na tło)
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Zamknij modal po naciśnięciu klawisza Escape
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
